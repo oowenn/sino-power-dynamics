@@ -1,1 +1,1 @@
-synopowerdynamics.com
+[sinopowerdynamics.com](https://sinopowerdynamics.com)

@@ -342,36 +342,19 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 
 .contact-intro p { color: #c7d3dd; }
 
-.contact-details {
-  list-style: none;
-  margin: 32px 0 0;
-  padding: 24px 0 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+.contact-email {
+  display: inline-block;
+  margin-top: 28px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
 }
 
-.contact-details li {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.detail-label {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #8fa1b0;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-.detail-value.placeholder {
-  font-style: italic;
-  color: #c7d3dd;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
-  padding-bottom: 2px;
-  width: fit-content;
+.contact-email:hover {
+  color: var(--accent-light);
+  border-color: var(--accent-light);
 }
 
 /* Footer */

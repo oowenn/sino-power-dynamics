@@ -309,6 +309,30 @@ p { margin: 0 0 16px; color: var(--text-muted); }
   text-align: center;
 }
 
+/* Facility */
+
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.facility-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.facility-label {
+  margin: 10px 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+}
+
 /* Gallery (quality section) */
 
 .gallery-grid {
@@ -390,6 +414,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
   .card-grid.three-col,
 
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .facility-grid { grid-template-columns: 1fr; }
 
   .hero h1 { font-size: 2rem; }
 

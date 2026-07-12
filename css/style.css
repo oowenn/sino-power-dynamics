@@ -348,25 +348,18 @@ p { margin: 0 0 16px; color: var(--text-muted); }
   border-radius: var(--radius);
 }
 
-/* Partners */
+/* Projects */
 
-.partner-list {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.partner-list li {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 14px 24px;
+.project-partner {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
   font-weight: 700;
-  color: var(--navy);
-  background: var(--bg-alt);
+  color: var(--steel);
+  margin-bottom: 10px;
 }
+
+.project-card h3 { margin-bottom: 10px; }
 
 /* Contact */
 
@@ -441,6 +434,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 
 @media (max-width: 560px) {
   .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .card-grid.two-col { grid-template-columns: 1fr; }
   .hero { padding: 72px 0 56px; }
   .section { padding: 56px 0; }
 }

@@ -1,14 +1,17 @@
 :root {
-  --navy: #0b1f33;
-  --navy-light: #14304d;
-  --steel: #4a6075;
-  --accent: #c1471d;
-  --accent-light: #e0633a;
+  /* Palette from the official SPD logo: lime green letterforms, red bolt */
+  --navy: #101a09;          /* deep green-black (was navy) */
+  --navy-light: #1c2c0f;
+  --steel: #5b6b4d;
+  --accent: #85d92e;        /* brand lime green */
+  --accent-light: #a3ec55;
+  --accent-dark: #3f7d0a;   /* readable green for text on white */
+  --red: #d21619;           /* brand bolt red */
   --bg: #ffffff;
-  --bg-alt: #f4f6f8;
-  --border: #e1e6ea;
-  --text: #1c2733;
-  --text-muted: #5a6b7a;
+  --bg-alt: #f5f8f1;
+  --border: #e2e8da;
+  --text: #1d2617;
+  --text-muted: #5c6a54;
   --radius: 6px;
   --max-width: 1140px;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -75,9 +78,8 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 }
 
 .logo-mark {
-  width: 26px;
-  height: 26px;
-  color: var(--accent);
+  height: 40px;
+  width: auto;
 }
 
 .logo-text {
@@ -103,16 +105,16 @@ p { margin: 0 0 16px; color: var(--text-muted); }
   color: var(--text);
 }
 
-.nav-list a:hover { color: var(--accent); }
+.nav-list a:hover { color: var(--accent-dark); }
 
 .nav-cta {
-  background: var(--navy);
+  background: var(--red);
   color: #fff !important;
   padding: 10px 18px;
   border-radius: var(--radius);
 }
 
-.nav-cta:hover { background: var(--accent); }
+.nav-cta:hover { background: var(--navy); }
 
 .nav-toggle {
   display: none;
@@ -133,7 +135,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 /* Hero */
 
 .hero {
-  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 55%, #1d4a6b 100%);
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 55%, #2e4a14 100%);
   color: #fff;
   padding: 100px 0 80px;
 }
@@ -155,7 +157,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 }
 
 .hero-sub {
-  color: #c7d3dd;
+  color: #cdd8c1;
   font-size: 1.1rem;
   max-width: 680px;
   margin-bottom: 32px;
@@ -180,7 +182,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 
 .btn-primary {
   background: var(--accent);
-  color: #fff;
+  color: #10200a;
 }
 
 .btn-primary:hover { background: var(--accent-light); }
@@ -213,7 +215,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 
 .stat-label {
   font-size: 0.85rem;
-  color: #9fb0bf;
+  color: #a4b294;
 }
 
 /* Sections */
@@ -248,7 +250,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 .stat-card-range {
   font-size: 1.6rem;
   font-weight: 800;
-  color: var(--accent);
+  color: var(--accent-dark);
   margin-bottom: 8px;
 }
 
@@ -290,7 +292,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 
 .product-range {
   display: inline-block;
-  color: var(--accent);
+  color: var(--accent-dark);
   font-weight: 700;
   font-size: 0.95rem;
   margin-bottom: 12px;
@@ -369,7 +371,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 
 .section-contact h2 { color: #fff; }
 
-.contact-intro p { color: #c7d3dd; }
+.contact-intro p { color: #cdd8c1; }
 
 .contact-email {
   display: inline-block;
@@ -395,7 +397,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 }
 
 .footer-inner p {
-  color: #8fa1b0;
+  color: #97a689;
   font-size: 0.85rem;
   margin: 0;
   text-align: center;

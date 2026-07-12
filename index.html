@@ -47,7 +47,8 @@
       </div>
       <ul class="hero-stats">
         <li><span class="stat-num">6&ndash;550kV</span><span class="stat-label">Voltage range</span></li>
-        <li><span class="stat-num">4&ndash;9 mo</span><span class="stat-label">Delivery lead time</span></li>
+        <li><span class="stat-num">Up to 1000MVA</span><span class="stat-label">Capacity</span></li>
+        <li><span class="stat-num">3&ndash;6 mo</span><span class="stat-label">Typical delivery lead time</span></li>
         <li><span class="stat-num">3</span><span class="stat-label">Manufacturing bases</span></li>
       </ul>
     </div>
@@ -197,11 +198,101 @@
   </section>
 
   <section id="contact" class="section section-contact">
-    <div class="container">
+    <div class="container contact-grid">
       <div class="contact-intro">
         <h2>Contact Us</h2>
-        <p>Tell us about your project, including voltage class, capacity, and timeline. Our team will follow up directly.</p>
-        <a class="contact-email" href="mailto:spd@sinopowerdynamics.com">spd@sinopowerdynamics.com</a>
+        <p>Share your transformer requirements below and our engineering team will follow up with a tailored quotation. Fields marked with an asterisk are required; everything else helps us respond faster.</p>
+        <p class="contact-line"><span class="contact-label">Email:</span> <a class="contact-email" href="mailto:spd@sinopowerdynamics.com">spd@sinopowerdynamics.com</a></p>
+        <p class="contact-line"><span class="contact-label">Phone:</span> <a class="contact-phone" href="tel:+18055589841">+1 (805) 558-9841</a></p>
+      </div>
+
+      <div class="quote-panel">
+        <button type="button" class="quote-toggle" id="quote-toggle" aria-expanded="false" aria-controls="quote-form" hidden>
+          <span class="quote-toggle-text">
+            <strong>Start a Project Request</strong>
+            <small>Send us your transformer specs for a tailored quote.</small>
+          </span>
+          <span class="quote-toggle-icon" aria-hidden="true"></span>
+        </button>
+
+      <form id="quote-form" class="quote-form" action="https://formsubmit.co/ajax/spd@sinopowerdynamics.com" method="POST" novalidate>
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_subject" value="New transformer quote request">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Fallback only: if JS is unavailable, return here instead of showing raw JSON -->
+        <input type="hidden" name="_next" value="https://sinopowerdynamics.com/#contact">
+        <!-- Honeypot: bots fill this, humans never see it -->
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <fieldset class="form-section">
+          <legend>Transformer specification</legend>
+          <div class="form-row">
+            <label class="form-field">
+              <span>Rated primary voltage (kV) *</span>
+              <input type="text" name="Rated primary voltage (kV)" inputmode="decimal" placeholder="" required>
+            </label>
+            <label class="form-field">
+              <span>Rated secondary voltage (kV) *</span>
+              <input type="text" name="Rated secondary voltage (kV)" inputmode="decimal" placeholder="" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="form-field">
+              <span>Rated capacity *</span>
+              <input type="text" name="Rated capacity" placeholder="MVA or kVA" required>
+            </label>
+            <label class="form-field">
+              <span>Installation location</span>
+              <input type="text" name="Installation location" placeholder="City / state / country">
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="form-field">
+              <span>Ambient temperature range</span>
+              <input type="text" name="Ambient temperature range" placeholder="e.g. -25&deg;C to 45&deg;C">
+            </label>
+            <label class="form-field">
+              <span>Site elevation</span>
+              <input type="text" name="Site elevation" placeholder="e.g. 1200 m above sea level">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend>Project &amp; contact</legend>
+          <div class="form-row">
+            <label class="form-field">
+              <span>Project name</span>
+              <input type="text" name="Project name" placeholder="e.g. Phoenix Data Center Ph. 2">
+            </label>
+            <label class="form-field">
+              <span>Contact name *</span>
+              <input type="text" name="Contact name" autocomplete="name" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="form-field">
+              <span>Email *</span>
+              <input type="email" name="email" autocomplete="email" placeholder="you@company.com" required>
+            </label>
+            <label class="form-field">
+              <span>Phone</span>
+              <input type="tel" name="Phone" autocomplete="tel" placeholder="+1 (555) 000-0000">
+            </label>
+          </div>
+          <label class="form-field">
+            <span>Additional details</span>
+            <textarea name="Additional details" rows="4" placeholder="Quantity, timeline, standards (IEEE/ANSI/NEMA), or other requirements."></textarea>
+          </label>
+        </fieldset>
+
+        <div class="form-footer">
+          <button type="submit" class="btn btn-primary form-submit">Send Quote Request</button>
+          <p class="form-note">We aim to respond within 3&ndash;5 business days.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
       </div>
     </div>
   </section>

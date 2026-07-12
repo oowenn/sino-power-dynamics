@@ -398,7 +398,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #8fa1b0;
+  color: #99a1aa;
 }
 
 .contact-email {
@@ -417,7 +417,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 .contact-phone {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #c7d3dd;
+  color: #c8ced5;
 }
 
 .contact-phone:hover { color: #fff; }
@@ -450,7 +450,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 
 .quote-toggle-text strong { font-size: 1.15rem; font-weight: 700; }
 
-.quote-toggle-text small { font-size: 0.9rem; color: #c7d3dd; }
+.quote-toggle-text small { font-size: 0.9rem; color: #c8ced5; }
 
 .quote-toggle-icon {
   position: relative;
@@ -589,12 +589,12 @@ p { margin: 0 0 16px; color: var(--text-muted); }
   outline: none;
   border-color: var(--accent);
   background: #fff;
-  box-shadow: 0 0 0 3px rgba(193, 71, 29, 0.12);
+  box-shadow: 0 0 0 3px rgba(133, 217, 46, 0.18);
 }
 
 .form-field input:user-invalid,
 .form-field textarea:user-invalid {
-  border-color: var(--accent);
+  border-color: var(--red);
 }
 
 .form-footer {

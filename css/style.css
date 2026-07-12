@@ -1,17 +1,19 @@
 :root {
   /* Palette from the official SPD logo: lime green letterforms, red bolt */
-  --navy: #101a09;          /* deep green-black (was navy) */
-  --navy-light: #1c2c0f;
-  --steel: #5b6b4d;
+  --navy: #16191d;          /* neutral graphite (was navy) */
+  --navy-light: #23272e;
+  --steel: #4a6075;
   --accent: #85d92e;        /* brand lime green */
   --accent-light: #a3ec55;
   --accent-dark: #3f7d0a;   /* readable green for text on white */
   --red: #d21619;           /* brand bolt red */
+  --orange: #c1471d;        /* original orange, for bold accent text */
+  --orange-light: #e0633a;
   --bg: #ffffff;
-  --bg-alt: #f5f8f1;
-  --border: #e2e8da;
-  --text: #1d2617;
-  --text-muted: #5c6a54;
+  --bg-alt: #f4f6f8;
+  --border: #e1e6ea;
+  --text: #1c2733;
+  --text-muted: #5a6b7a;
   --radius: 6px;
   --max-width: 1140px;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -135,7 +137,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 /* Hero */
 
 .hero {
-  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 55%, #2e4a14 100%);
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 55%, #333a44 100%);
   color: #fff;
   padding: 100px 0 80px;
 }
@@ -144,7 +146,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.8rem;
-  color: var(--accent-light);
+  color: var(--orange-light);
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -157,7 +159,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 }
 
 .hero-sub {
-  color: #cdd8c1;
+  color: #c8ced5;
   font-size: 1.1rem;
   max-width: 680px;
   margin-bottom: 32px;
@@ -215,7 +217,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 
 .stat-label {
   font-size: 0.85rem;
-  color: #a4b294;
+  color: #a0a8b1;
 }
 
 /* Sections */
@@ -250,7 +252,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 .stat-card-range {
   font-size: 1.6rem;
   font-weight: 800;
-  color: var(--accent-dark);
+  color: var(--orange);
   margin-bottom: 8px;
 }
 
@@ -292,7 +294,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 
 .product-range {
   display: inline-block;
-  color: var(--accent-dark);
+  color: var(--orange);
   font-weight: 700;
   font-size: 0.95rem;
   margin-bottom: 12px;
@@ -371,7 +373,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 
 .section-contact h2 { color: #fff; }
 
-.contact-intro p { color: #cdd8c1; }
+.contact-intro p { color: #c8ced5; }
 
 .contact-email {
   display: inline-block;
@@ -397,7 +399,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 }
 
 .footer-inner p {
-  color: #97a689;
+  color: #99a1aa;
   font-size: 0.85rem;
   margin: 0;
   text-align: center;

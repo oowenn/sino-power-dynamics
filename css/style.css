@@ -1,13 +1,10 @@
 :root {
   /* Palette from the official SPD logo: lime green letterforms, red bolt */
-  --navy: #16191d;          /* neutral graphite (was navy) */
-  --navy-light: #23272e;
+  --navy: #14180f;          /* near-black with a faint green cast (was navy) */
+  --navy-light: #202417;
   --steel: #4a6075;
-  --accent: #85d92e;        /* brand lime green */
-  --accent-light: #a3ec55;
-  --accent-dark: #3f7d0a;   /* readable green for text on white */
   --red: #d21619;           /* brand bolt red */
-  --orange: #c1471d;        /* original orange, for bold accent text */
+  --orange: #c1471d;        /* brand accent orange */
   --orange-light: #e0633a;
   --bg: #ffffff;
   --bg-alt: #f4f6f8;
@@ -107,7 +104,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
   color: var(--text);
 }
 
-.nav-list a:hover { color: var(--accent-dark); }
+.nav-list a:hover { color: var(--orange); }
 
 .nav-cta {
   background: var(--red);
@@ -137,7 +134,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 /* Hero */
 
 .hero {
-  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 55%, #333a44 100%);
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 55%, #2b3122 100%);
   color: #fff;
   padding: 100px 0 80px;
 }
@@ -183,11 +180,11 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 }
 
 .btn-primary {
-  background: var(--accent);
-  color: #10200a;
+  background: var(--orange);
+  color: #fff;
 }
 
-.btn-primary:hover { background: var(--accent-light); }
+.btn-primary:hover { background: var(--orange-light); }
 
 .btn-secondary {
   background: transparent;
@@ -405,13 +402,13 @@ p { margin: 0 0 16px; color: var(--text-muted); }
   font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 2px solid var(--orange);
   padding-bottom: 4px;
 }
 
 .contact-email:hover {
-  color: var(--accent-light);
-  border-color: var(--accent-light);
+  color: var(--orange-light);
+  border-color: var(--orange-light);
 }
 
 .contact-phone {
@@ -458,7 +455,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--orange);
 }
 
 /* Plus/minus drawn as two bars so it stays perfectly centered */
@@ -587,9 +584,9 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 .form-field input:focus,
 .form-field textarea:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color: var(--orange);
   background: #fff;
-  box-shadow: 0 0 0 3px rgba(133, 217, 46, 0.18);
+  box-shadow: 0 0 0 3px rgba(193, 71, 29, 0.14);
 }
 
 .form-field input:user-invalid,
@@ -624,7 +621,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 .form-status:empty { display: none; }
 
 .form-status.success { color: #1a7a4a; }
-.form-status.error { color: var(--accent); }
+.form-status.error { color: var(--orange); }
 
 /* Footer */
 

@@ -304,12 +304,6 @@ p { margin: 0 0 16px; color: var(--text-muted); }
   margin-bottom: 0;
 }
 
-.products-footnote {
-  margin-top: 32px;
-  font-size: 0.95rem;
-  text-align: center;
-}
-
 /* Facility */
 
 .facility-grid {
